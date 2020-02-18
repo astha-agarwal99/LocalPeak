@@ -15,13 +15,13 @@ def peak(lst):
 
 class PeakTest(unittest.TestCase):
 
-    def test_No_element_has_no_peak(self):
+    def test_no_element_has_no_peak(self):
         self.assertEqual(None, peak([]))
 
-    def test_Single_element_has_itself_as_a_peak(self):
+    def test_single_element_has_itself_as_a_peak(self):
         self.assertEqual(1, peak([1]))
 
-    def test_Two_elements_has_greatest_as_a_peak(self):
+    def test_two_elements_has_greatest_as_a_peak(self):
         self.assertEqual(2, peak([1, 2]))
 
 
