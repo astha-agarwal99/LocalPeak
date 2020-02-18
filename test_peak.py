@@ -5,19 +5,13 @@ def peak(lst):
     peak_num = None
     if len(lst) == 1:
         peak_num = lst[0]
-    if len(lst) == 2:
-        if lst[0] > lst[1]:
-            peak_num = lst[0]
-        else:
-            peak_num = lst[1]
-
-    if len(lst) == 3:
-        if lst[0] > lst[1]:
-            peak_num = lst[0]
-        elif lst[1] > lst[2]:
-            peak_num = lst[1]
-        else:
-            peak_num = lst[2]
+    if len(lst) > 1:
+        peak_num = 0
+        counter = 0
+        while counter != len(lst):
+            if peak_num < lst[counter]:
+                peak_num = lst[counter]
+            counter += 1
 
     return peak_num
 
