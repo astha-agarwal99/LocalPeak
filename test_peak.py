@@ -43,7 +43,8 @@ class PeakTest(unittest.TestCase):
 
     def test_random_elements_peak(self):
         self.assertEqual(57, peak([1, 5, 9, 27, 32, 57, 43, 23, 6, 15, 3]))
-
+    def test_array_with_same_elements(self):
+        self.assertEqual(5, peak([5,5,5,5,5,5,5]))
 
 if __name__ == '__main__':
     unittest.main()
