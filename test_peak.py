@@ -30,6 +30,9 @@ class PeakTest(unittest.TestCase):
     def test_three_elements_has_peak_whose_left_and_right_are_smaller(self):
         self.assertEqual(5, peak([1, 5, 3]))
 
+    def test_four_elements_has_peak_whose_left_and_right_are_smaller(self):
+        self.assertEqual(9, peak([1, 5, 9, 3]))
+
 
 if __name__ == '__main__':
     unittest.main()
